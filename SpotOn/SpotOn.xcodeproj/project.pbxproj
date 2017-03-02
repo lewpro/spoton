@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		660BBB2D1E67C57B00C39C0C /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 660BBB301E67C57B00C39C0C /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				660BBB311E67C58000C39C0C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3853FFEB1E67C28400F5ADF3 /* _Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE51E67C28400F5ADF3 /* _Board.swift */; };
 		3853FFEC1E67C28400F5ADF3 /* _Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE61E67C28400F5ADF3 /* _Game.swift */; };
@@ -220,6 +234,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = LewPRO;
 				TargetAttributes = {
+					660BBB2D1E67C57B00C39C0C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LTL382XB5P;
+						ProvisioningStyle = Automatic;
+					};
 					66E7B3A81E63C690008AB2AE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LTL382XB5P;
@@ -255,6 +274,7 @@
 				66E7B3A81E63C690008AB2AE /* SpotOn */,
 				66E7B3BF1E63C691008AB2AE /* SpotOnTests */,
 				66E7B3CA1E63C691008AB2AE /* SpotOnUITests */,
+				660BBB2D1E67C57B00C39C0C /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +305,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		660BBB311E67C58000C39C0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m SpotOn/SpotOn/storage/SpotOn.xcdatamodeld/SpotOn.xcdatamodel -O SpotOn/SpotOn/storage/ --swift --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66E7B3A51E63C690008AB2AE /* Sources */ = {
@@ -354,6 +390,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		660BBB2E1E67C57B00C39C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = LTL382XB5P;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		660BBB2F1E67C57B00C39C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = LTL382XB5P;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		66E7B3D21E63C691008AB2AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -534,6 +586,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		660BBB301E67C57B00C39C0C /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660BBB2E1E67C57B00C39C0C /* Debug */,
+				660BBB2F1E67C57B00C39C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		66E7B3A41E63C690008AB2AE /* Build configuration list for PBXProject "SpotOn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
