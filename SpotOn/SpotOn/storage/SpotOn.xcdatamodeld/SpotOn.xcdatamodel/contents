@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Board" representedClassName="Board" syncable="YES">
+        <attribute name="letterMask" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="score" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="boards" inverseEntity="Player" syncable="YES"/>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="lastPlayed" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="started" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="boards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Board" syncable="YES"/>
+        <relationship name="winner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="games" inverseEntity="Player" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="Player 1" syncable="YES"/>
+        <relationship name="boards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Board" inverseName="player" inverseEntity="Board" syncable="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="winner" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Board" positionX="162" positionY="-189" width="128" height="90"/>
+        <element name="Game" positionX="16" positionY="36" width="128" height="105"/>
+        <element name="Player" positionX="-144" positionY="-144" width="128" height="105"/>
+    </elements>
+</model>
