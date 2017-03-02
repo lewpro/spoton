@@ -5,6 +5,7 @@ import Foundation
 import CoreData
 
 public enum GameAttributes: String {
+    case id = "id"
     case lastPlayed = "lastPlayed"
     case started = "started"
 }
@@ -38,6 +39,9 @@ open class _Game: NSManagedObject {
     }
 
     // MARK: - Properties
+
+    @NSManaged open
+    var id: NSNumber?
 
     @NSManaged open
     var lastPlayed: Date
