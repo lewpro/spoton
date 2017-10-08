@@ -17,6 +17,7 @@
 		3857CFE61F82922C00056142 /* ActiveGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFE51F82922C00056142 /* ActiveGameController.swift */; };
 		3857CFE91F82A35700056142 /* PlayerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFE81F82A35700056142 /* PlayerSelector.swift */; };
 		38D3F3421E67C03900A9F047 /* SpotOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38D3F3401E67C03900A9F047 /* SpotOn.xcdatamodeld */; };
+		66178E851F8A9F06009089AA /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66178E841F8A9F06009089AA /* CoreDataHelpers.swift */; };
 		66E7B3AD1E63C691008AB2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7B3AC1E63C691008AB2AE /* AppDelegate.swift */; };
 		66E7B3AF1E63C691008AB2AE /* GameSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7B3AE1E63C691008AB2AE /* GameSelector.swift */; };
 		66E7B3B21E63C691008AB2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E7B3B01E63C691008AB2AE /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		3857CFE51F82922C00056142 /* ActiveGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveGameController.swift; path = controllers/ActiveGameController.swift; sourceTree = "<group>"; };
 		3857CFE81F82A35700056142 /* PlayerSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerSelector.swift; path = controllers/PlayerSelector.swift; sourceTree = "<group>"; };
 		38D3F3411E67C03900A9F047 /* SpotOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotOn.xcdatamodel; sourceTree = "<group>"; };
+		66178E841F8A9F06009089AA /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		66E7B3A91E63C691008AB2AE /* SpotOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E7B3AC1E63C691008AB2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66E7B3AE1E63C691008AB2AE /* GameSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelector.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				66E7B3C41E63C691008AB2AE /* SpotOnTests.swift */,
+				66178E841F8A9F06009089AA /* CoreDataHelpers.swift */,
 				66E7B3C61E63C691008AB2AE /* Info.plist */,
 			);
 			path = SpotOnTests;
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66178E851F8A9F06009089AA /* CoreDataHelpers.swift in Sources */,
 				66E7B3C51E63C691008AB2AE /* SpotOnTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
