@@ -36,26 +36,26 @@ public class Board: NSManagedObject {
         self.letterMask = 0
     }
     
-    private func togglePointAt(index i: Int) {
+    func togglePoint(atIndex i: Int) {
         letterMask ^= 1 << i
     }
     
-    func togglePoint(_ l: String) throws {
+    func togglePoint(atLetter l: String) throws {
         if let i = getIndexAt(letter: l){
-            togglePointAt(index: i)
+            togglePoint(atIndex: i)
         } else {
             throw BoardExceptions.invalidLetter
         }
     }
     
-    private func hasPointAt(index i: Int) -> Bool {
+    func hasPoint(atIndex i: Int) -> Bool {
         let bit = (letterMask >> i) & 1
         return bit == 1
     }
     
-    func hasPointAt(Letter l: String) throws -> Bool {
+    func hasPoint(atLetter l: String) throws -> Bool {
         if let i = getIndexAt(letter: l){
-            return hasPointAt(index: i)
+            return hasPoint(atIndex: i)
         } else {
             throw BoardExceptions.invalidLetter
         }

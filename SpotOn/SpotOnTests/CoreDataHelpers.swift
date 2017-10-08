@@ -6,7 +6,6 @@
 //  Copyright © 2017 LewPRO. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
 func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
