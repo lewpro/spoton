@@ -6,30 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		660BBB2D1E67C57B00C39C0C /* Mogenerator */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 660BBB301E67C57B00C39C0C /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
-			buildPhases = (
-				660BBB311E67C58000C39C0C /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Mogenerator;
-			productName = Mogenerator;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		3853FFEB1E67C28400F5ADF3 /* _Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE51E67C28400F5ADF3 /* _Board.swift */; };
-		3853FFEC1E67C28400F5ADF3 /* _Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE61E67C28400F5ADF3 /* _Game.swift */; };
-		3853FFED1E67C28400F5ADF3 /* _Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE71E67C28400F5ADF3 /* _Player.swift */; };
-		3853FFEE1E67C28400F5ADF3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE81E67C28400F5ADF3 /* Board.swift */; };
-		3853FFEF1E67C28400F5ADF3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFE91E67C28400F5ADF3 /* Game.swift */; };
-		3853FFF01E67C28400F5ADF3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853FFEA1E67C28400F5ADF3 /* Player.swift */; };
+		3813421A1E6CB11400B1283F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381342191E6CB11400B1283F /* CoreDataManager.swift */; };
+		3857CFDF1F828EEC00056142 /* Board+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFD91F828EEC00056142 /* Board+CoreDataClass.swift */; };
+		3857CFE01F828EEC00056142 /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFDA1F828EEC00056142 /* Board+CoreDataProperties.swift */; };
+		3857CFE11F828EEC00056142 /* Game+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFDB1F828EEC00056142 /* Game+CoreDataClass.swift */; };
+		3857CFE21F828EEC00056142 /* Game+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFDC1F828EEC00056142 /* Game+CoreDataProperties.swift */; };
+		3857CFE31F828EEC00056142 /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFDD1F828EEC00056142 /* Player+CoreDataClass.swift */; };
+		3857CFE41F828EEC00056142 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFDE1F828EEC00056142 /* Player+CoreDataProperties.swift */; };
+		3857CFE61F82922C00056142 /* ActiveGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFE51F82922C00056142 /* ActiveGameController.swift */; };
+		3857CFE91F82A35700056142 /* PlayerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857CFE81F82A35700056142 /* PlayerSelector.swift */; };
 		38D3F3421E67C03900A9F047 /* SpotOn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38D3F3401E67C03900A9F047 /* SpotOn.xcdatamodeld */; };
 		66E7B3AD1E63C691008AB2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7B3AC1E63C691008AB2AE /* AppDelegate.swift */; };
-		66E7B3AF1E63C691008AB2AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7B3AE1E63C691008AB2AE /* ViewController.swift */; };
+		66E7B3AF1E63C691008AB2AE /* GameSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7B3AE1E63C691008AB2AE /* GameSelector.swift */; };
 		66E7B3B21E63C691008AB2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E7B3B01E63C691008AB2AE /* Main.storyboard */; };
 		66E7B3B71E63C691008AB2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E7B3B61E63C691008AB2AE /* Assets.xcassets */; };
 		66E7B3BA1E63C691008AB2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E7B3B81E63C691008AB2AE /* LaunchScreen.storyboard */; };
@@ -55,16 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3853FFE51E67C28400F5ADF3 /* _Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _Board.swift; path = storage/_Board.swift; sourceTree = "<group>"; };
-		3853FFE61E67C28400F5ADF3 /* _Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _Game.swift; path = storage/_Game.swift; sourceTree = "<group>"; };
-		3853FFE71E67C28400F5ADF3 /* _Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _Player.swift; path = storage/_Player.swift; sourceTree = "<group>"; };
-		3853FFE81E67C28400F5ADF3 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = storage/Board.swift; sourceTree = "<group>"; };
-		3853FFE91E67C28400F5ADF3 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = storage/Game.swift; sourceTree = "<group>"; };
-		3853FFEA1E67C28400F5ADF3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = storage/Player.swift; sourceTree = "<group>"; };
+		381342191E6CB11400B1283F /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = storage/CoreDataManager.swift; sourceTree = "<group>"; };
+		3857CFD91F828EEC00056142 /* Board+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataClass.swift"; path = "storage/Board+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3857CFDA1F828EEC00056142 /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataProperties.swift"; path = "storage/Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3857CFDB1F828EEC00056142 /* Game+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataClass.swift"; path = "storage/Game+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3857CFDC1F828EEC00056142 /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "storage/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3857CFDD1F828EEC00056142 /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Player+CoreDataClass.swift"; path = "storage/Player+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3857CFDE1F828EEC00056142 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Player+CoreDataProperties.swift"; path = "storage/Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3857CFE51F82922C00056142 /* ActiveGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveGameController.swift; path = controllers/ActiveGameController.swift; sourceTree = "<group>"; };
+		3857CFE81F82A35700056142 /* PlayerSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerSelector.swift; path = controllers/PlayerSelector.swift; sourceTree = "<group>"; };
 		38D3F3411E67C03900A9F047 /* SpotOn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotOn.xcdatamodel; sourceTree = "<group>"; };
 		66E7B3A91E63C691008AB2AE /* SpotOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E7B3AC1E63C691008AB2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66E7B3AE1E63C691008AB2AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66E7B3AE1E63C691008AB2AE /* GameSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelector.swift; sourceTree = "<group>"; };
 		66E7B3B11E63C691008AB2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66E7B3B61E63C691008AB2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E7B3B91E63C691008AB2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,16 +94,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3857CFE71F82923E00056142 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3857CFE51F82922C00056142 /* ActiveGameController.swift */,
+				3857CFE81F82A35700056142 /* PlayerSelector.swift */,
+				66E7B3AE1E63C691008AB2AE /* GameSelector.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		386B91701E67B87A009B322B /* storage */ = {
 			isa = PBXGroup;
 			children = (
-				3853FFE51E67C28400F5ADF3 /* _Board.swift */,
-				3853FFE61E67C28400F5ADF3 /* _Game.swift */,
-				3853FFE71E67C28400F5ADF3 /* _Player.swift */,
-				3853FFE81E67C28400F5ADF3 /* Board.swift */,
-				3853FFE91E67C28400F5ADF3 /* Game.swift */,
-				3853FFEA1E67C28400F5ADF3 /* Player.swift */,
+				3857CFD91F828EEC00056142 /* Board+CoreDataClass.swift */,
+				3857CFDA1F828EEC00056142 /* Board+CoreDataProperties.swift */,
+				3857CFDB1F828EEC00056142 /* Game+CoreDataClass.swift */,
+				3857CFDC1F828EEC00056142 /* Game+CoreDataProperties.swift */,
+				3857CFDD1F828EEC00056142 /* Player+CoreDataClass.swift */,
+				3857CFDE1F828EEC00056142 /* Player+CoreDataProperties.swift */,
 				38D3F3401E67C03900A9F047 /* SpotOn.xcdatamodeld */,
+				381342191E6CB11400B1283F /* CoreDataManager.swift */,
 			);
 			name = storage;
 			sourceTree = "<group>";
@@ -139,9 +142,9 @@
 		66E7B3AB1E63C691008AB2AE /* SpotOn */ = {
 			isa = PBXGroup;
 			children = (
+				3857CFE71F82923E00056142 /* controllers */,
 				386B91701E67B87A009B322B /* storage */,
 				66E7B3AC1E63C691008AB2AE /* AppDelegate.swift */,
-				66E7B3AE1E63C691008AB2AE /* ViewController.swift */,
 				66E7B3B01E63C691008AB2AE /* Main.storyboard */,
 				66E7B3B61E63C691008AB2AE /* Assets.xcassets */,
 				66E7B3B81E63C691008AB2AE /* LaunchScreen.storyboard */,
@@ -234,11 +237,6 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = LewPRO;
 				TargetAttributes = {
-					660BBB2D1E67C57B00C39C0C = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = LTL382XB5P;
-						ProvisioningStyle = Automatic;
-					};
 					66E7B3A81E63C690008AB2AE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LTL382XB5P;
@@ -274,7 +272,6 @@
 				66E7B3A81E63C690008AB2AE /* SpotOn */,
 				66E7B3BF1E63C691008AB2AE /* SpotOnTests */,
 				66E7B3CA1E63C691008AB2AE /* SpotOnUITests */,
-				660BBB2D1E67C57B00C39C0C /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -306,36 +303,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		660BBB311E67C58000C39C0C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "mogenerator -m SpotOn/SpotOn/storage/SpotOn.xcdatamodeld/SpotOn.xcdatamodel -O SpotOn/SpotOn/storage/ --swift --template-var arc=true";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		66E7B3A51E63C690008AB2AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E7B3AF1E63C691008AB2AE /* ViewController.swift in Sources */,
+				3857CFE61F82922C00056142 /* ActiveGameController.swift in Sources */,
+				3857CFDF1F828EEC00056142 /* Board+CoreDataClass.swift in Sources */,
+				66E7B3AF1E63C691008AB2AE /* GameSelector.swift in Sources */,
+				3857CFE01F828EEC00056142 /* Board+CoreDataProperties.swift in Sources */,
+				3857CFE31F828EEC00056142 /* Player+CoreDataClass.swift in Sources */,
+				3857CFE91F82A35700056142 /* PlayerSelector.swift in Sources */,
 				38D3F3421E67C03900A9F047 /* SpotOn.xcdatamodeld in Sources */,
-				3853FFEB1E67C28400F5ADF3 /* _Board.swift in Sources */,
-				3853FFEC1E67C28400F5ADF3 /* _Game.swift in Sources */,
-				3853FFEE1E67C28400F5ADF3 /* Board.swift in Sources */,
-				3853FFED1E67C28400F5ADF3 /* _Player.swift in Sources */,
 				66E7B3AD1E63C691008AB2AE /* AppDelegate.swift in Sources */,
-				3853FFF01E67C28400F5ADF3 /* Player.swift in Sources */,
-				3853FFEF1E67C28400F5ADF3 /* Game.swift in Sources */,
+				3857CFE41F828EEC00056142 /* Player+CoreDataProperties.swift in Sources */,
+				3857CFE21F828EEC00056142 /* Game+CoreDataProperties.swift in Sources */,
+				3813421A1E6CB11400B1283F /* CoreDataManager.swift in Sources */,
+				3857CFE11F828EEC00056142 /* Game+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,22 +374,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		660BBB2E1E67C57B00C39C0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = LTL382XB5P;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		660BBB2F1E67C57B00C39C0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = LTL382XB5P;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		66E7B3D21E63C691008AB2AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -586,14 +554,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		660BBB301E67C57B00C39C0C /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				660BBB2E1E67C57B00C39C0C /* Debug */,
-				660BBB2F1E67C57B00C39C0C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		66E7B3A41E63C690008AB2AE /* Build configuration list for PBXProject "SpotOn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
