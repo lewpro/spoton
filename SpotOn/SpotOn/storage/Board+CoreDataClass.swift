@@ -17,7 +17,7 @@ public class Board: NSManagedObject {
     }
     
     enum BoardExceptions: Error {
-        case invalidLetter
+        case InvalidLetter
     }
     
     var score : Int16 {
@@ -56,7 +56,7 @@ public class Board: NSManagedObject {
         if let i = getIndexAt(letter: l){
             togglePoint(atIndex: i)
         } else {
-            throw BoardExceptions.invalidLetter
+            throw BoardExceptions.InvalidLetter
         }
     }
     
@@ -69,7 +69,7 @@ public class Board: NSManagedObject {
         if let i = getIndexAt(letter: l){
             return hasPoint(atIndex: i)
         } else {
-            throw BoardExceptions.invalidLetter
+            throw BoardExceptions.InvalidLetter
         }
     }
     
