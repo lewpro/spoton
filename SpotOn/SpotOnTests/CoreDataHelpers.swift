@@ -9,15 +9,11 @@
 import CoreData
 
 func setUpInMemoryManagedObjectContext() -> NSManagedObjectContext {
-    guard let modelURL = Bundle.main.url(forResource: "SponOn", withExtension: "momd") else {
-        fatalError("Unable to find managed object model file.")
-    }
-        
-    guard let managedOBjectModel = NSManagedObjectModel(contentsOf: modelURL) else {
+    guard let managedObjectModel = NSManagedObjectModel.mergedModel(from: [Bundle.main]) else {
         fatalError("Unable to find managed object model file.")
     }
     
-    let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: managedOBjectModel)
+    let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
     
     do {
         try persistentStoreCoordinator.addPersistentStore(ofType: NSInMemoryStoreType, configurationName: nil, at: nil, options: nil)

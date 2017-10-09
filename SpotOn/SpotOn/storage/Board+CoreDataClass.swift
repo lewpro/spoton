@@ -22,9 +22,21 @@ public class Board: NSManagedObject {
     
     var score : Int16 {
         get {
-            // TODO: Bitshift the lettermask over to calculate current score
-            return 0
+            var count = 0
+            var i = 0
+            while(i<Const.LetterSets.englishLetters.count){
+                if(letterMask & 1 == 1){
+                    count = count + 1
+                }
+                letterMask = letterMask >> 1
+                i = i + 1
+            }
+            return Int16(count)
         }
+    }
+    
+    func toString(){
+        print(letterMask)
     }
     
     
